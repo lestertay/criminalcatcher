@@ -1,0 +1,9 @@
+html, body {
+	height: 100%;
+	margin: auto;
+}
+
+.containing {
+	text-align: center;
+	margin: 20px 10%;
+}
