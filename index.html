@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catch Fat Criminals</title>
+	<link rel="stylesheet" type="text/css" href="./app.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="containing">
+
+		<div class="container" id="container">
+
+            <h1 id="center">New Criminal</h1>
+            <form action="/" method="post" enctype="multipart/form-data">
+            	<div class="form-group">
+               	 <input class="form-control" type="file" name="jpeg">
+                </div>
+                <div class="form-group">
+               	 <input class="form-control" type="text" placeholder="name" name="name">
+                </div>
+                <div class="form-group">
+                	<input class="form-control" type="text" placeholder="img url" name="image">
+                </div>
+                <div class="form-group">
+                	<textarea name="description" class="form-control" placeholder="Enter description here..." ></textarea>
+                </div>
+
+                <div class="form-group checklist">
+                	<select class="form-control" type="checklist" name="district">
+                		<option value="BISHAN">Bishan</option>
+                		<option value="EAST COAST">East Coast</option>
+                		<option value="ANG MO KIO">Ang Mo Kio</option>
+                		<option value="TIONG BAHRU">Tiong Bahru</option>
+                		<option value="PASIR RIS">Pasir Ris</option>
+                		<option value="MARYMOUNT">Marymount</option>
+                		<option value="JOO KOON">Joo Koon</option>
+                		<option value="BEDOK">Bedok</option>
+                		<option value="CLARK QUAY">Clark Quay</option>
+                		<option value="YISHUN">Yishun</option>
+                	</select>
+                </div>
+                <div class="form-group">
+               		<input class="form-control" type="text" placeholder="Annual Salary" name="salary">
+                </div>
+                <div class="form-group checklist">
+                	<select class="form-control" type="checklist" placeholder="Prior Record" name="prior_record">
+                		<option value="ARREST, BOOKED">ARREST, BOOKED</option>
+                		<option value="NONE">NONE</option>
+                		<option value="ARREST, CITED">ARREST, CITED</option>
+                		<option value="PSYCHOPATHIC CASE">PSYCHOPATHIC CASE</option>
+                		<option value="JUVENILE BOOKED">JUVENILE BOOKED</option>
+                		<option value="UNFOUNDED">UNFOUNDED</option>
+                		<option value="EXCEPTIONAL CLEARANCE">EXCEPTIONAL CLEARANCE</option>
+                		<option value="LOCATED">LOCATED</option>
+                		<option value="CLEARED - CONTACT JUVENILE FOR MORE INFO">CLEARED - CONTACT JUVENILE FOR MORE INFO</option>
+                		<option value="NOT PROSECUTED">NOT PROSECUTED</option>
+                	</select>
+                </div>
+
+                <div class="form-group">
+                <button class="btn btn-primary btn-block ">Create</button>
+                </div>
+            </form>
+		</div>
+	</div>
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
